@@ -1,0 +1,135 @@
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.l_row {
+    margin: 0 -10px;
+}
+
+.l_col {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.l_col_12_12 { width: 100%; }
+.l_col_11_12 { width: 91.666666667%; }
+.l_col_10_12 { width: 83.333333333%; }
+.l_col_9_12  { width: 75% ;}
+.l_col_8_12  { width: 66.666666666%; }
+.l_col_7_12 { width: 58.3333333333%; }
+.l_col_6_12 { width: 50%; }
+.l_col_5_12 { width: 41.6666666667%; }
+.l_col_4_12 { width: 33.3333333333%; }
+.l_col_3_12 { width: 25%; }
+.l_col_2_12 { width: 16.6666666666%; }
+.l_col_1_12 { width: 8.33333333333%; }
+.l_col_right { float: right; }
+
+header {
+    background-image: url(images/cover.png);
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    text-align: center;
+}
+
+header .title {
+    display: inline-block;
+    background-color: #111;
+    color: orangered;
+    padding: 0.4em 0.6em;
+}
+
+body {
+    background-color: #111;
+    color: #999;
+}
+
+main {
+    padding: 40px;
+}
+
+main section {
+    margin-bottom: 20px;
+}
+
+main section.desc h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+main section.desc h2 span {
+    white-space: nowrap;
+}
+
+main section.desc p {
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+main section.desc .desc-photo {
+    float: right;
+    display: none;
+    margin-left: 10px;
+    margin-right: -40px;
+}
+
+main section.photo .item {
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+main section.photo .item img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    transition: all 0.2s;
+}
+
+main section.photo .item img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+@media (min-width: 960px) {
+    header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 60vw;
+        height: 100vh;
+    }
+    header .title {
+        font-size: 3em;
+    }
+    main {
+        margin-left: 60vw;
+    }
+}
+
+@media (min-width: 1400px) {
+    header {padding: 0;}
+    header .title {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 4em;
+    }
+    main section.desc .desc-photo {
+        display: block;
+    }
+    main section.desc h2 {
+        font-size: 2em;
+    }
+    .l_col_ld_8_12  { width: 66.666666666%; }
+}

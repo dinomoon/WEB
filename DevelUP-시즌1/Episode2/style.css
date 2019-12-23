@@ -1,0 +1,17 @@
+h1, h2, p, ul { margin: 0; padding: 0;}
+li {list-style-type: none;}
+body {background-image: url(images/halloween-background.gif);}
+.wrapper {width: 800px; margin: 50px auto;}
+.header img {margin-top: 40px;}
+.header .name {color: orangered; margin: 10px 0;}
+.header p {background-color: #000; color: #999; width: 400px; margin: 0 auto; padding: 10px;}
+.header {background-image: url(images/halloween-header-bg.png); height: 400px;  text-align: center;}
+
+.contents {background-color: #ddd; overflow: auto;}
+.contents .content {background-color: white; margin: 20px; padding: 20px; background-image: url(images/icon-information.png); background-repeat: no-repeat; background-position: right 30px center;}
+.contents .content.skills {background-image: url(images/icon-skills.png);}
+.contents .content h2 {color: orangered; margin-bottom: 15px;}
+.contents .content li {padding: 5px 10px; border-left: 5px solid #ddd;}
+.contents .content li:hover {border-color: orangered; color: orangered;}
+
+.footer {background-color: #000; color: orange; padding: 10px; text-align: center; letter-spacing: 5px;}

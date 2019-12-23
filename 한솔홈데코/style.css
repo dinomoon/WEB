@@ -1,0 +1,24 @@
+header {text-align: center; height: 81px;}
+header h1 a {display: block; width: 110px; height: 48px; color: transparent; background: url(images/sp_com.png) no-repeat -300px 0;}
+header .home {position: absolute; top: 0; left: 50px; padding-top: 14px;}
+header .spot {position: absolute; top: 0; right: 50px;}
+header .lnb li {display: inline-block;}
+header .lnb li a {display: block; height: 81px; padding: 0 35px; line-height: 81px;}
+header .lnb li a:hover {color: #2d5b79; font-weight: bold;}
+header .lnb li a span {position: relative;}
+header .lnb li a:hover span::after {position: absolute; content: ''; display: block; width: 100%; height: 1px; left: 0; bottom: -9px; background: #2d5b79}
+header .spot li {float: left; position: relative;} /* display: inline-block을 해도 되지만 그러면 한 칸 띄어지는 효과가 자동으로 생겨서 float: left를 사용 */
+header .spot li a {display: block; height: 81px; padding: 0 10px; line-height: 81px;}
+header .spot li::after {content: ''; position: absolute; left: 0; top: 50%; width: 1px; height: 7px; background: #ccc; transform: translateY(-50%);}
+header .spot li:first-child::after{display: none;}
+/* */
+.visual {position: relative; padding: 0 50px;}
+.visual .prev,
+.visual .next {display:block; width: 25px; height: 47px; position: absolute; top: 50%; transform: translateY(-50%); background: url(images/sp_com.png); color: transparent;}
+.visual .prev {left: 82px; background-position: -128px -60px;}
+.visual .next {right: 82px; background-position: -158px -60px;}
+.visual .con > div {height: 690px;}
+.visual .con .slide {background: url(images/bg_main02.jpg) no-repeat;}
+.visual .control {position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);}
+.visual .control li {display: inline-block; width: 50px; height: 3px; background-color: rgba(255, 255, 255, 0.5); cursor: pointer; margin: 0 2px;}
+.visual .control .on {background-color: #fff;}

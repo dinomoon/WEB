@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>최문경의 홈페이지</title>
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Oswald&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="header_bg">
+                    <div>
+                        <a href="index.html" data-toggle="tooltip" data-placement="right" title="첫 페이지로 이동합니다">Logo</a>
+                        <div class="KNU_logo">
+                            <img src="../media/KNU.jpg" alt="">
+                        </div>
+                        <div class="js-clock">
+                            <h3>00:00:00</h3>
+                        </div>
+                        <script src="../js/clock.js"></script>
+                        <div class="login_join">
+                            <a href="login.html">
+                                <input type="button" value="로그인">    
+                            </a>
+                            <a href="join_membership.html">
+                                <input type="button" value="회원가입">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="container">
+                <nav>
+                    <div class="menu_container">
+                    <ul class="menu">
+                        <li>자기 소개
+                            <ul>
+                                <li><a href="self_introduce.html">나의 소개</a></li>
+                                <li><a href="my_photo.html">나의 사진</a></li>
+                                <li><a href="my_video.html">나의 영상</a></li>
+                                <li><a href="my_music.html">나의 음악</a></li>
+                            </ul>
+                        </li>
+                        <li>애니메이션
+                            <ul>
+                                <li><a href="bike.html">움직이는 자전거</a></li>
+                                <li><a href="day_night.html">낮과 밤</a></li>
+                                <li><a href="scroll_plane.html">종이비행기</a></li>
+                                <li><a href="text_animation.html">글씨 배경</a></li>
+                            </ul>
+                        </li>
+                        <li>게임
+                            <ul>
+                                <li><a href="break_brick.html">벽돌 깨기</a></li>
+                                <li><a href="paint.html">그림 그리기</a></li>
+                                <li><a href="tetris.html">테트리스</a></li>
+                            </ul>
+                        </li>
+                        <li>멋진 사이트
+                            <ul>
+                                <li><a href="https://www.cruxmedia.com.au/" target="_blank">CRUX</a></li>
+                                <li><a href="https://fonshickmann.com/" target="_blank">fonshickmann</a></li>
+                                <li><a href="http://www.benmingo.com/" target="_blank">benmingo</a></li>
+                                <li><a href="http://koreawebdesign.com/" target="_blank">webDesign</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </div>
+                </nav>
+                <section>
+                    <article class="join_membership">
+                        <form action="#" method="POST" name="JOIN">
+                            <table>
+                                <thead></thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">회원 ID</th>
+                                        <td>
+                                            <input id="ID" type="text" name="mb_ID">
+                                            <input type="button" value="중복확인">
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">비밀번호</th>
+                                        <td>
+                                            <input id="password" type="password">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">비밀번호 확인</th>
+                                        <td>
+                                            <input id="password" type="password">
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">이름</th>
+                                        <td>
+                                            <input id="name" type="text">
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">성별</th>
+                                        <td>
+                                            <input id="male" type="radio" name="sex">
+                                            <label for="male">남성</label>
+
+                                            <input id="female" type="radio" name="sex">
+                                            <label for="female">여성</label>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">생년월일</th>
+                                        <td>
+                                            <input id="birthday" type="date" name="mb_date">
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">휴대전화</th>
+                                        <td>
+                                            <input id="phone" type="text">
+                                        </td>
+                                    </tr>
+
+                                    <tr class="email">
+                                        <th scope="row">이메일</th>
+                                        <td>
+                                            <input id="email" type="email">
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">주소</th>
+                                        <td>
+                                            <input class="address_input" type="text" size="10" placeholder="우편번호" id="sample4_postcode" readonly="readonly">
+                                            <input class="address_input" type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기"><br>
+                                            <input class="address_input" type="text" size="34" placeholder="도로명주소" id="sample4_roadAddress">
+                                            <input class="address_input" type="text" size="34" placeholder="지번주소" id="sample4_jibunAddress"><br>
+                                            <input class="address_input" type="text" size="27" placeholder="상세 주소" id="sample4_detailAddress">
+                                            <input type="text" size="27" id="sample4_extraAddress" placeholder="참고항목">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="join_cancel_button">
+                                            <input type="button" value="확인">
+                                            <input type="reset" value="취소" onclick="alert('정말 취소하시겠습니까?')">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </article>
+                    <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+                    <script src="../js/join_membership.js"></script>
+                </section>
+            </main>
+            <footer>
+                <address>
+                    <p>
+                        copyright &copy;2019 all rights reserved.
+                    </p>
+                </address>
+            </footer>
+        </div>
+        <div class="SmallScreenText">
+            화면을 크게 만들어주세요.
+        </div>
+    </body>
+</html>

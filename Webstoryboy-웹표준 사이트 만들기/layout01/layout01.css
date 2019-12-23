@@ -1,0 +1,43 @@
+body {
+    background-color: #c8e6c9;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+#wrap {
+    width: 1000px;
+    height: 700px;
+    margin: 0 auto;
+}
+#header {
+    width: 1000px;
+    height: 100px;
+    background-color: #2e7d32;
+    line-height: 100px;
+}
+#nav {
+    width: 1000px;
+    height: 100px;
+    background-color: #388e3c;
+    line-height: 100px;
+}
+#side {
+    width: 300px;
+    height: 400px;
+    background-color: #43a047;
+    float: left;
+    line-height: 400px;
+}
+#contents {
+    width: 700px;
+    height: 400px;
+    background-color: #4caf50;
+    overflow: hidden;
+    line-height: 400px;
+}
+#footer {
+    width: 1000px;
+    height: 100px;
+    background-color: #66bb6a;
+    line-height: 100px;
+}

@@ -1,0 +1,73 @@
+/* CSS Reset */
+body, h1, h2, p {
+    margin: 0;
+}
+body { background-color: #ddd;}
+header {
+    background-image: url(images/background.png);
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+}
+header h1 {
+    background-color: orangered;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8vw;
+    padding: 0.3em 0.3em 0.2em;
+    line-height: 1;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+section {width: 980px; margin: 50px auto;}
+section article {
+    background-color: white;
+    margin-bottom: 40px;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: right;
+    position: relative;
+}
+section article h2 {
+    font-size: 2vw;
+    margin-bottom: 30px;
+    border-bottom: 3px solid;
+    display: inline-block;
+}
+section article p {
+    display: inline-block;
+    width: 300px;
+    line-height: 1.4;
+}
+section article img {
+    position: absolute;
+    left: -16%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+section article:nth-child(even) {
+    text-align: left;
+}
+section article:nth-child(even) img {
+    left: auto;
+    right: -16%;
+}
+section article.kiwi img{
+    left: -24%;
+}
+section article.strawberry h2 {
+    color: orangered;
+    border-color: rgba(255,0,0,0.4);
+}
+section article.orange h2 {
+    color: orange;
+    border-color: rgba(255,100,100, 0.2);
+}
+section article.kiwi h2 {
+    color: forestgreen;
+    border-color: rgba(200, 255, 200, 0.8);
+}

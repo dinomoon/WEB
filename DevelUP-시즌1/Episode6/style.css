@@ -1,0 +1,124 @@
+h2, p {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: #ddd;
+}
+.wrapper {
+    width: 800px;
+    margin: 200px auto;
+}
+.sidebar {
+    background-color: white;
+    float: right;
+    width: 300px;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+.sidebar img {
+    width: 100%;
+    margin-top: -120px;
+}
+.sidebar h2 {
+    font-size: 40px;
+    color: #99b7ca;
+    margin-bottom: 10px;
+}
+.sidebar .star:before,
+.sidebar .star {
+    width: 150px;
+    height: 30px;
+    display: inline-block;
+    background-image: url(images/star-sprite.png);
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.sidebar .star:before{
+    content: ' ';
+    display: block;
+    background-position: left bottom;
+    width: 0;
+}
+.sidebar .star.s01:before {width: 20%;}
+.sidebar .star.s02:before {width: 40%;}
+.sidebar .star.s03:before {width: 60%;}
+.sidebar .star.s04:before {width: 80%;}
+.sidebar .star.s05:before {width: 100%;}
+.sidebar .price {color: #99b7ca; font-size: 30px; margin-bottom: 30px;}
+.sidebar .price:before {content: '$'; font-size: 24px;}
+.sidebar a {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px auto;
+    display: block;
+    background-color: #99b7ca;
+    color: white;
+}
+.sidebar a.share {
+    background-color: #778d9b;
+}
+.contents {
+    background-color:white;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 3px;
+}
+.contents h2 {
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+    color: #99b7ca;
+}
+.contents p {
+    margin-bottom: 40px;
+}
+.contents div:last-child p{
+    margin-bottom: 0;
+}
+.message {
+    margin-bottom: 20px;
+}
+.message-contents {
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 18px;
+    background-color: #ddd;
+}
+.message.answer .message-contents {
+    background-color: antiquewhite;
+}
+.message:last-child {
+    margin-bottom: 0;
+}
+.message .message-profile {
+    float: left;
+}
+.message.answer .message-profile {
+    float: right;
+}
+.message-profile img {
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.message.question .message-profile:after {
+    content: ' ';
+    display: inline-block;
+    border-left: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #ddd;
+    border-bottom: 10px solid transparent;
+    vertical-align: middle;
+}
+.message.answer .message-profile:before {
+    content: ' ';
+    display: inline-block;
+    border-left: 10px solid antiquewhite;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    vertical-align: middle;
+}

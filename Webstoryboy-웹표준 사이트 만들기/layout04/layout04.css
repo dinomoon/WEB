@@ -1,0 +1,50 @@
+body {
+    background-color: #ffe0b2;
+}
+#wrap {
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+.header {
+    width: 1000px;
+    height: 100px;
+    background-color: #ef6c00;
+    line-height: 100px;
+}
+.nav {
+    width: 1000px;
+    height: 100px;
+    background-color: #f57c00;
+    line-height: 100px;
+}
+.side {
+    width: 300px;
+    height: 600px;
+    background-color: #fb8c00;
+    float: left;
+    line-height: 600px;
+}
+.content1 {
+    width: 700px;
+    height: 300px;
+    background-color: #ff9800;
+    overflow: hidden;
+    line-height: 300px;
+}
+.content2 {
+    width: 700px;
+    height: 300px;
+    background-color: #ffa726;
+    overflow: hidden;
+    line-height: 300px;
+}
+.footer {
+    width: 1000px;
+    height: 100px;
+    background-color: #ffb74d;
+    line-height: 100px;
+}

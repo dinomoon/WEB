@@ -1,0 +1,39 @@
+body {
+    background-color: #d1c4e9;
+}
+#wrap {
+    width: 1000px;
+    height: 600px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+#side {
+    width: 300px;
+    height: 600px;
+    background-color: #4527a0;
+    float: left;
+    line-height: 600px;
+}
+#header {
+    width: 700px;
+    height: 200px;
+    background-color: #512da8;
+    overflow: hidden;
+    line-height: 200px;
+}
+#contents {
+    width: 700px;
+    height: 200px;
+    background-color: #5e35b1;
+    overflow: hidden;
+    line-height: 200px;
+}
+#footer {
+    width: 700px;
+    height: 200px;
+    background-color: #673ab7;
+    overflow: hidden;
+    line-height: 200px;
+}

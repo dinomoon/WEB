@@ -1,0 +1,145 @@
+body, ul, p, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+header {
+    height: 300px;
+    background-image: url(images/cover.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+header h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    line-height: 2em;
+    border-top: 8px solid white;
+    border-bottom: 8px solid white;
+    letter-spacing: 0.2em;
+}
+body {
+    background-image: url(images/bg.png);
+    color: white;
+}
+main {
+    margin: 0 auto;
+}
+.timeline {
+    max-width: 1080px;
+    margin: 0 auto;
+    position: relative;
+    padding: 40px 0;
+}
+.timeline::before{
+    content: '';
+    background-color: #999;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+    width: 6px;
+    margin-top: 50px;
+}
+.timeline-item {
+    width: 50%;
+    padding: 0 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url(images/bg.png);
+    border: 6px solid #999;
+    border-radius: 50%;
+    right: 0;
+    margin-right: -21px;
+}
+.timeline-item::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 6px;
+    background-color: #999;
+    right: 0;
+    top: 18px;
+    margin-right: 20px;
+}
+.timeline-item:nth-child(even) {
+    margin-left: auto;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+.timeline-item:nth-child(even)::before {
+    left: 0;
+    margin-left: -21px;
+}
+.timeline-item:nth-child(even)::after {
+    left: 0;
+    margin-left: 20px;
+}
+.tour {
+    background-color: #000;
+}
+.tour img {
+    width: 100%;
+}
+.tour .tour-contents {
+    padding: 20px;
+}
+.tour .tour-contents strong {
+    display: block;
+    color: antiquewhite;
+}
+.tour .tour-contents h2 {
+    margin-bottom: 20px;
+}
+.tour .tour-contents h2 span {
+    font-size: 1.6em;
+}
+.tour .tour-contents p {
+    line-height: 1.4;
+}
+
+@media (max-width: 768px){
+    .timeline-item {
+        width: auto;
+        margin-right: 40px;
+    }
+    .timeline-item:nth-child(even) {
+        margin: 40px 40px 40px 0;
+    }
+    .timeline::before{
+        content: '';
+        background-color: #999;
+        position: absolute;
+        left: initial;
+        right: 37px;
+        transform: none;
+        top: 0;
+        bottom: 0;
+        width: 6px;
+        margin-top: 50px;
+    }
+    .timeline-item:nth-child(even)::before {
+        left: initial;
+        margin-left: -21px;
+    }
+    .timeline-item:nth-child(even)::after {
+        left: initial;
+        margin-left: 20px;
+    }
+    header h1 {
+        font-size: 2.5em;
+    }
+}
