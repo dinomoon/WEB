@@ -74,7 +74,7 @@
 /* 컨텐츠 */
 .con {overflow: hidden; margin: 0 -10px; padding: 40px 0;}
 .con .column {float: left; width: 33.3333333%; padding: 0 10px; box-sizing: border-box; margin-bottom: 20px;}
-.con .column div {height: 363px;}
+.con .column {height: 363px;}
 .con .col1 {border-right: 1px solid #c8c8c8;}
 .con .col2 {border-right: 1px solid #c8c8c8;}
 .con .col3 {}
@@ -100,9 +100,18 @@
 .con .col6 .ico_img:hover {background-position: -60px -540px;}
 
 /* 게시판 */
-.notice {position: relative;}
+.notice {position: relative; margin-bottom: 15px;}
 .notice h4 {font-size: 16px; color: #0093bd; padding-bottom: 3px;}
 .notice ul li {overflow: hidden; text-overflow: ellipsis; white-space: nowrap; background: url(../img/dot.gif) no-repeat left center; padding-left: 8px;}
 .notice a {font-size: 14px; color: #333;}
 .notice a:hover {text-decoration: underline;}
 .notice .more {position: absolute; right: 0; top: 0; display: block; background: url(../img/icon.png) -150px -90px; width: 17px; height: 17px;}
+
+/* 게시판2 */
+.notice2 li a {float: left; width: 65%;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.notice2 li span {float: right; width: 30%;}
+
+/* 게이판3 */
+.notice3 ul li {background: none; padding: 0 10px 10px 0;}
+.notice3 ul li img {width: 50px; float: left; margin-right: 10px;}
+.notice3 ul li p {overflow: hidden; text-overflow: ellipsis;}
