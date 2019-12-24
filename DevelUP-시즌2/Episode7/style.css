@@ -1,0 +1,183 @@
+/* reset */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.clearfix::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+.l_col {float: left;}
+.l_col_12_12 { width: 100%; }
+.l_col_11_12 { width: 91.666666667%; }
+.l_col_10_12 { width: 83.333333333%; }
+.l_col_9_12  { width: 75% ;}
+.l_col_8_12  { width: 66.666666666%; }
+.l_col_7_12 { width: 58.3333333333%; }
+.l_col_6_12 { width: 50%; }
+.l_col_5_12 { width: 41.6666666667%; }
+.l_col_4_12 { width: 33.3333333333%; }
+.l_col_3_12 { width: 25%; }
+.l_col_2_12 { width: 16.6666666666%; }
+.l_col_1_12 { width: 8.33333333333%; }
+
+/* components */
+body {
+    background-color: #000;
+    color: #999;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* header */
+header {
+    /* background-color: #999; */
+    color: white;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+header nav {
+    border: 2px solid;
+    position: relative;
+}
+header h1 {
+    float: left;
+    padding: 10px 0;
+}
+header h1 a {
+    display: block;
+    width: 115px;
+    height: 40px;
+    background-image: url(images/logo.png);
+    background-size: cover;
+    color: transparent;
+}
+header ul {
+    float: right;
+}
+header ul li {
+    float: left;
+}
+header ul li a {
+    display: block;
+    height: 60px;
+    padding: 0 10px;
+    border-left: 2px solid;
+    line-height: 60px;
+}
+header .header-cover {
+    /* width: 1200px; */
+    background-image: url(images/header-cover.png);
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0 40px 0;
+    margin-top: -140px;
+}
+
+header .header-cover-contents {
+    max-width: 500px;
+}
+header .header-cover-contents h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+header .header-cover-contents p {
+    line-height: 1.4;
+    color: #999;
+}
+/* //header */
+
+/* main */
+main section.category {
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+main section.category ul {
+    margin: -5px;
+}
+main section.category li {
+    padding: 5px;
+    box-sizing: border-box;
+}
+main section.category a {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    line-height: 100px;
+    position: relative;
+    font-weight: bold;
+}
+main section.category a span {
+    z-index: 10;
+}
+main section.category a:after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.4;
+}
+main section.category a:hover:after {
+    opacity: 0;
+}
+main section.category #chair a {background-image: url(images/cat01.png);}
+main section.category #matt a {background-image: url(images/cat02.png);}
+main section.category #kitchen a {background-image: url(images/cat03.png);}
+main section.category #lighting a {background-image: url(images/cat04.png);}
+main section.category #storage a {background-image: url(images/cat05.png);}
+main section.category #textile a {background-image: url(images/cat06.png);}
+
+main section.banner {padding: 40px 0;}
+main section.banner .sidebar {float: left; width: 300px; margin-right: 20px;}
+main section.banner .sidebar h2 {color: white; font-size: 30px;}
+main section.banner .sidebar p {margin-bottom: 20px}
+main section.banner .main {overflow: hidden;}
+main section.banner .main .l_row {margin: 0 -10px;}
+main section.banner .main .l_col {padding: 10px; box-sizing: border-box; float: left;}
+main section.banner .main .item {position: relative;}
+main section.banner .main .item-cover {width: 100%; display: block;}
+main section.banner .main .item h3 {position: absolute; left: 0; bottom: 0; color: white; margin: 5%;}
+
+footer .nav {padding: 30px 0; border-bottom: 1px solid;}
+footer .nav-items {float: left; margin-right: 30px;}
+footer .nav-items h3 {margin-bottom: 10px;}
+footer .nav-items a:hover {color: white;}
+footer img {float: right; opacity: 0.4;}
+footer .author {padding: 20px 0;}
+
+@media (max-width: 480px) {
+    .l_col_m_12_12 { width: 100%; }
+}
+
+@media (max-width: 768px) {
+    header .header-cover-contents h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    header .header-cover-contents p {
+        font-size: 14px;
+    }
+    .l_col_m_4_12 { width: 33.3333333333%; }
+    
+    main section.banner .sidebar {float: none;}
+    
+    footer .nav {padding: 0;}
+    footer .nav-items {float: none; margin-bottom: 24px;}
+    footer .nav-items h3 {margin-bottom: 6px;}
+    footer img {float: none; margin-bottom: 20px;}
+}
