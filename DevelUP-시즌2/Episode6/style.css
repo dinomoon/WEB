@@ -79,7 +79,7 @@ header .header-cover {
     background-image: url(images/header-cover.png);
     background-size: cover;
     background-position: center;
-    padding: 200px 0 40px 40px;
+    padding: 200px 0 40px 0;
     margin-top: -140px;
 }
 
