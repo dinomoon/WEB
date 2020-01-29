@@ -1,8 +1,8 @@
 # 실전 예제 작업해보기
 
-![1](https://user-images.githubusercontent.com/42693257/71239711-90ac8980-234a-11ea-87c6-a24bb960366e.png)
+![1](https://user-images.githubusercontent.com/42693257/73342048-2ed42d80-42c1-11ea-9371-9a688c347d29.png)
 
-![2](https://user-images.githubusercontent.com/42693257/71239713-90ac8980-234a-11ea-84a1-ef7fa67b4f78.png)
+![2](https://user-images.githubusercontent.com/42693257/73342050-2f6cc400-42c1-11ea-90e4-e30dcd0fc41e.png)
 
 ## 알게 된 것
 1. float으로 그리드를 만들지 않고, display: table과 table-cell로 만들 수도 있다.
